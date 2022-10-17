@@ -1,0 +1,164 @@
+{
+  "platform": "mychain",
+  "language": "solidity",
+  "framework": "none",
+  "compilerVersion": "0.8.14",
+  "testCases": [
+    {
+      "version": 1,
+      "contractName": "SonarMeta",
+      "test_units": [
+        {
+          "name": "Case1",
+          "key": "166599873194640gq9f4",
+          "actions": [
+            {
+              "$id": "YtbPxko6vOHzhYDpQhBUiG7QnlYAI1d7",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "fundTreasury",
+              "contract": "SonarMeta",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": [
+                {
+                  "type": "raw",
+                  "value": {
+                    "name": "_amount",
+                    "value_type": "uint256",
+                    "data": "200000000000000000000"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": 1,
+      "contractName": "Governance",
+      "test_units": [
+        {
+          "name": "Case1",
+          "key": "1665998808804jcsryg5",
+          "actions": [
+            {
+              "$id": "imLwrpUH3RNw8lKwQZaxjHcUIu4RkDu8",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "setTreasury",
+              "contract": "Governance",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": [
+                {
+                  "type": "raw",
+                  "value": {
+                    "name": "_newTreasury",
+                    "value_type": "identity",
+                    "data": "e8ffa3c1e30a830aa3c75b8fa4db532558e196a5b12c70e4535403e4552d5f32"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": 1,
+      "contractName": "MRC721",
+      "test_units": [
+        {
+          "name": "Case1",
+          "key": "16659989050644mvx310",
+          "actions": [
+            {
+              "$id": "D92Wxtdz5JW9z5n2sUhbV6kyYq2IQgHH",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "owner",
+              "contract": "MRC721",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": 1,
+      "contractName": "MRC20",
+      "test_units": [
+        {
+          "name": "Case1",
+          "key": "16659991820778ny4txq",
+          "actions": [
+            {
+              "$id": "ZMe9sa6k9KUbJfxfbouIAJbw0ksluDv6",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "balanceOf",
+              "contract": "MRC20",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": [
+                {
+                  "type": "raw",
+                  "value": {
+                    "name": "account",
+                    "value_type": "identity",
+                    "data": "e8ffa3c1e30a830aa3c75b8fa4db532558e196a5b12c70e4535403e4552d5f32"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": 1,
+      "contractName": "MRC998",
+      "test_units": [
+        {
+          "name": "Case1",
+          "key": "1665999494490r8lx5mq",
+          "actions": [
+            {
+              "$id": "b039Pj99G7YbVw4iU90jsE59unM1Yjr4",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "transferOwnership",
+              "contract": "MRC998",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": [
+                {
+                  "type": "raw",
+                  "value": {
+                    "name": "newOwner",
+                    "value_type": "identity",
+                    "data": "6ab0bb9d64c0972b34472840f28b5fabb0fed1731c0b4006c3fef2d3dbcc103f"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
