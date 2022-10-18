@@ -10,14 +10,14 @@
       "test_units": [
         {
           "name": "Case1",
-          "key": "166599873194640gq9f4",
+          "key": "166606256936215w7u22",
           "actions": [
             {
-              "$id": "YtbPxko6vOHzhYDpQhBUiG7QnlYAI1d7",
+              "$id": "vxXPE6fI8Xq7B1LxM2OEKXxCvdA8EEP9",
               "action": "Call",
               "name": "",
               "sender": "1665988286678xgu0jca",
-              "method": "fundTreasury",
+              "method": "mintMRC721",
               "contract": "SonarMeta",
               "fixed_id": false,
               "gas": 0,
@@ -26,9 +26,9 @@
                 {
                   "type": "raw",
                   "value": {
-                    "name": "_amount",
-                    "value_type": "uint256",
-                    "data": "200000000000000000000"
+                    "name": "_to",
+                    "value_type": "identity",
+                    "data": "e8ffa3c1e30a830aa3c75b8fa4db532558e196a5b12c70e4535403e4552d5f32"
                   }
                 }
               ]
@@ -50,8 +50,32 @@
               "action": "Call",
               "name": "",
               "sender": "1665988286678xgu0jca",
-              "method": "setTreasury",
+              "method": "treasury",
               "contract": "Governance",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": 1,
+      "contractName": "MRC721",
+      "test_units": [
+        {
+          "name": "Case1",
+          "key": "1666063542051q8losq7",
+          "actions": [
+            {
+              "$id": "Zq4Sk0LsJ902rw9y2drwCCbRvRJbLeHl",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "balanceOf",
+              "contract": "MRC721",
               "fixed_id": false,
               "gas": 0,
               "local": false,
@@ -59,7 +83,7 @@
                 {
                   "type": "raw",
                   "value": {
-                    "name": "_newTreasury",
+                    "name": "owner",
                     "value_type": "identity",
                     "data": "e8ffa3c1e30a830aa3c75b8fa4db532558e196a5b12c70e4535403e4552d5f32"
                   }
@@ -72,38 +96,14 @@
     },
     {
       "version": 1,
-      "contractName": "MRC721",
-      "test_units": [
-        {
-          "name": "Case1",
-          "key": "16659989050644mvx310",
-          "actions": [
-            {
-              "$id": "D92Wxtdz5JW9z5n2sUhbV6kyYq2IQgHH",
-              "action": "Call",
-              "name": "",
-              "sender": "1665988286678xgu0jca",
-              "method": "owner",
-              "contract": "MRC721",
-              "fixed_id": false,
-              "gas": 0,
-              "local": false,
-              "parameters": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "version": 1,
       "contractName": "MRC20",
       "test_units": [
         {
           "name": "Case1",
-          "key": "16659991820778ny4txq",
+          "key": "1666072214201ronqs5s",
           "actions": [
             {
-              "$id": "ZMe9sa6k9KUbJfxfbouIAJbw0ksluDv6",
+              "$id": "oJwAevmv4wpX1ZdhYjDHghiok43G10mH",
               "action": "Call",
               "name": "",
               "sender": "1665988286678xgu0jca",
@@ -155,6 +155,24 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "name": "Case2",
+          "key": "16660620791052utvkui",
+          "actions": [
+            {
+              "$id": "pOm5k1DQzF6oON4LgkzXvqRC5pllqSCR",
+              "action": "Call",
+              "name": "",
+              "sender": "1665988286678xgu0jca",
+              "method": "owner",
+              "contract": "MRC998",
+              "fixed_id": false,
+              "gas": 0,
+              "local": false,
+              "parameters": []
             }
           ]
         }
